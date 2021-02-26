@@ -1,0 +1,157 @@
+/* Patrones globales del CSS */ 
+/* Títulos, Enlaces, Botones, Párrafos, Formularios y otras etiquetas de textos */ 
+h1, h2, h3, h4, h5, a, p, button, form, input, select, textarea, option, table, tr, th, td, span, div, strong, em  { font-family: 'Roboto', sans-serif; }
+
+/* Subtítulos H6 */ 
+h6 { font-family: 'Permanent Marker', cursive; }
+
+/* Asignar display: block; a todas las cajas de estructura */ 
+header, main, footer, aside, section, article, figure, nav, figcaption, div { display: block; }
+
+/* Quitar margen por defecto a etiquetas que lo traen */
+h1, h2, h3, h5, h6, p, figure { margin: 0; }
+
+/* Anular margen por defecto de body */ 
+body { margin: 0 !important; }
+
+
+
+/* Estilo propio */
+
+/* Componente Menú Móviles */
+aside#menu-movil { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; right: -290px; z-index: 99999; background: rgb(12 44 6 / 97%); }
+
+aside#menu-movil a#abrir { width: 40px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: rgb(73, 168, 50); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#abrir:hover { background: rgb(12, 44, 6); transition: all 0.3s ease-in; }
+
+aside#menu-movil a#cerrar { width: 40px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 25px; left: -40px; z-index: 99996; background: rgb(73, 168, 50); color: #fff; text-align: center; font-size: 1.3em; padding: 8px 0; transition: all 0.3s ease-in; }
+aside#menu-movil a#cerrar:hover { background: rgb(12, 44, 6); transition: all 0.3s ease-in; }
+
+aside#menu-movil nav { width: 70%; height: auto; display: block; margin: 40px auto 0 auto; float: none; position: relative; }
+aside#menu-movil nav a { width: 100%; height: auto; display: block; margin: 0 auto 25px; float: none; position: relative; color: #fff; text-decoration: none; text-align: center; font-size: 1em; font-weight: 500; transition: all 0.3s ease-in; }
+aside#menu-movil nav a:hover { color: #999; transition: all 0.3s ease-in; }
+aside#menu-movil nav a:last-child { height: auto; background: #fff; transition: all 0.3s ease-in; color: rgb(73, 168, 50); padding: 12px 24px ; border-radius: 50px; width: 90px; top: 15px; }
+aside#menu-movil nav a:last-child:hover { color: #fff; transition: all 0.3s ease-in; background: #000; }
+
+
+
+/* Componente: HEADER */
+header { width: 100%; height: 100px; position: fixed; top: 0; left: 0; z-index: 99998; margin: 0; float: none; background: transparent; }
+
+header article { height: 90px; width: 1100px; background: #fff; padding: 0 0 0 100px; border-radius: 0 10px 10px 0 ; float: left; position: relative; top: 10px; margin: 0; }
+header article a { width: auto; height: 60px; margin: 0; float: left; position: relative; padding: 14px 0; }
+header article a img { width: auto; height: 60px; margin: 0; float: left; position: relative; }
+header article nav { width: 700px; height: 42px; margin: 0; float: right; position: relative; padding: 28px 0; }
+header article nav a { width: 98px; height: auto; margin: 10px 20px 0 0; float: left; position: relative; display: block; text-decoration: none; color: #000; text-transform: uppercase; font-weight: 600; font-size: 0.85em; text-align: center; padding: 0 0 6px; }
+header article nav a:last-child { margin: 0 0 0 38px; color: #fff; background: rgb(73, 168, 50); padding: 10px 21px 10px 21px; border-radius: 50px; }
+header article nav a:hover { border-bottom: solid 3px rgb(73, 168, 50); transition: all 0.3s ease-in; color: rgb(73, 168, 50); }
+header article nav a:hover:last-child { background: #000; transition: all 0.3s ease-in; color: #fff; padding: 10px 21px 10px 21px; border-bottom: none; }
+
+/* Componente: Contenedor MAIN */
+main { width: 100%; height: auto; position: relative; margin: 100px auto 0 auto; float: none; }
+
+/* Seccion Happy Hour */
+main section#happy-hour { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: url(../img/fondo-puntos.png) no-repeat top center rgb(247, 242, 242); }
+main section#happy-hour div#ancla-happy-hour { }
+
+main section#happy-hour article { width: 1100px;  height: 826px; position: relative; margin: 0 auto; float: none; padding: 75px 0 0; }
+main section#happy-hour article h3 { font-size: 1.8em; color: rgb(73, 168, 50); font-weight: 600; line-height: 1em; margin: 0px; padding: 15px 0 10px; text-align: center; }
+main section#happy-hour article h2 { font-size: 3em; color: rgb(8, 20, 5); font-weight: 900; line-height: 1em; margin: 0px auto; text-align: center; width: 500px; height: auto; }
+main section#happy-hour article h2 span { color: rgb(73, 168, 50); }
+main section#happy-hour article a { width: 115px; height: auto; margin: 20px auto -25px; float: none; text-align: center; text-decoration: none; display: block; font-size: 0.95em; color: #fff; padding: 18px 30px; background: rgb(73, 168, 50); border-radius: 50px; text-transform: uppercase; font-weight: 800; letter-spacing: 0.02em; }
+main section#happy-hour article img { width: 750px; height: auto; position: relative; margin: 0 auto; float: none; display: block; z-index: 85412; }
+main section#happy-hour article a:hover { transition: all 0.3s ease-in; background: #000; }
+
+/* Sección Our Menu */
+main section#our-menu { width: 100%; height: auto; position: relative; margin: 0 auto; float: none; background: url(../img/fondo-textura.png) no-repeat top center #fff; }
+main section#our-menu div#ancla-our-menu {  }
+
+main section#our-menu article { width: 1100px; height: auto; margin: 0 auto 90px; float: none; position: relative;  }
+main section#our-menu article h6 { font-size: 1.9em; text-align: center; color: yellowgreen; padding: 90px 0 10px ; }
+main section#our-menu article h2 { font-size: 3em; text-align: center; color: rgb(12, 44, 6); font-weight: 800; padding: 0 0 50px 0; }
+main section#our-menu article div#fila-platos { width: 100%; height: 420px; position: relative; margin: 0 auto; float: none; }
+
+main section#our-menu article div#fila-platos figure { width: 336px; height: 378px; float: left; position: relative; border-radius: 10px; overflow: hidden; }
+
+main section#our-menu article div#fila-platos figure:nth-child(1) { margin: 16px 30px 0 0; }
+main section#our-menu article div#fila-platos figure:nth-child(2) { margin: 0 30px 0 0; width: 366px; height: 411px; }
+main section#our-menu article div#fila-platos figure:nth-child(3) { margin: 16px 0 0 0 }
+
+main section#our-menu article div#fila-platos figure img { width: 100%; height: auto; margin: 0 30px 0 0; float: left; position: relative; display: block; top: 0; left: 0; z-index: 1; transition: all 0.3s ease-in; }
+main section#our-menu article div#fila-platos figure h4 { width: 70%; height: auto; margin: 0 30px 0 0; float: left; position: relative; display: block; bottom: 30%; left: 15%; z-index: 2; background: rgb(255 255 255 / 80%); color: #000; text-align: center; border-radius: 10px; padding: 20px 0; font-size: 1.8em; transition: all 0.3s ease-in; }
+
+main section#our-menu article div#fila-platos figure:hover img { filter: saturate(1.5); transition: all 0.3s ease-in; }
+main section#our-menu article div#fila-platos figure:hover h4 { background: rgb(0 0 0 / 80%); color: #fff; transition: all 0.3s ease-in;  }
+    
+/* Seccion Free Pizza */
+main section#free-pizza { width: 100%; height: 500px; position: relative; margin: 0 auto; float: none; background: url(../img/cta_bg.jpg) no-repeat top center; background-size: cover; }
+main section#free-pizza div#ancla-free-pizza { }
+
+main section#free-pizza article { width: 450px; height: 400px; position: relative; margin: 100px 200px; float: left; }
+main section#free-pizza article h5 { width: auto; height: 85px; margin: 0; float: left; color: #fff; font-size: 2.5em; text-transform: uppercase; font-weight: 100; line-height: 1em; }
+main section#free-pizza article h5 span { color: #fff; font-size: 3.4em; font-weight: 500;}
+main section#free-pizza article h3 { margin: 0; float: left; font-size: 5em; text-transform: uppercase; font-weight: 800; color: rgb(73, 168, 50); padding: 0 0 24px; }
+main section#free-pizza article a { width: 115px; height: 20px; margin: 0; float: left; text-align: center; text-decoration: none; display: block; font-size: 0.95em; color: #fff; padding: 18px 30px; background: rgb(73, 168, 50); border-radius: 50px; text-transform: uppercase; font-weight: 800; letter-spacing: 0.02em; }
+main section#free-pizza article a:hover { color: #000; transition: all 0.3s ease-in; background: #fff; }
+
+
+/* Componente: Footer */
+footer#contacto { width: 100%; height: auto; position: relative; margin: 0; float: none; background: transparent; padding: 70px 0 70px; }
+
+footer#contacto article {  width: 1100px;  height: 300px; position: relative; margin: 0 auto; float: none; padding: 75px 0 0; }
+footer#contacto article div#superior-footer { width: auto; height: auto; position: relative; float: none; text-align: center; display: block; margin: 0; }
+footer#contacto article div#superior-footer p { font-size: 0,5em; line-height: 1em; margin: 10px auto 100px; color: rgb(151, 151, 151); }
+
+footer#contacto article div#inferior-footer nav { float: none; display: block; text-align: center; margin: 50px; }
+footer#contacto article div#inferior-footer nav a { width: auto; height: auto; position: relative; color: #fff; border-radius: 50px; text-align: center; text-decoration: none; margin: 12px 7px 0 0; padding: 10px; transition: all 0.3s ease-in; }
+footer#contacto article div#inferior-footer nav a:nth-child(1) { background: rgb(43, 66, 194); }
+footer#contacto article div#inferior-footer nav a:nth-child(2) { background: rgb(90, 165, 209); }
+footer#contacto article div#inferior-footer nav a:nth-child(3) { background: rgb(212, 27, 197); }
+footer#contacto article div#inferior-footer nav a:nth-child(4) { background: rgb(212, 27, 27); }
+footer#contacto article div#inferior-footer nav a:hover { background: #000; transition: all 0.3s ease-in; }
+
+
+/* Zona de Media Queries para Responsive */
+
+/* Ajustes Tablets */
+@media only screen and (max-width: 1199px){
+    header article { width: 90%; }
+    header article a { margin: 0 auto; float: none; }
+    header article nav { display: none; }
+
+    aside#menu-movil { display: block; }
+
+    main section#happy-hour { height: auto; }
+    main section#happy-hour article { width: 80%; height: auto; }
+    main section#happy-hour article div#ancla-happy-hour { height: auto; }
+    main section#happy-hour article div#ancla-happy-hour img { width: auto; height: 50%; top: 45px; }
+
+
+    main section#our-menu article { width: 80%; }
+    main section#our-menu article div#fila-platos { height: auto; }
+    main section#our-menu article div#fila-platos figure { width: 270px; float: none; }
+
+    main section#our-menu article div#fila-platos figure:nth-child(1) { margin: 0 auto 30px; }
+    main section#our-menu article div#fila-platos figure:nth-child(2) { margin: 0 auto 30px; width: 290px; }
+    main section#our-menu article div#fila-platos figure:nth-child(3) { margin: 0 auto; }
+    main section#our-menu article div#fila-platos figure img { width: auto; height: 100%; }
+
+    main section#free-pizza { height: auto; }
+    main section#free-pizza article { width: 80%;}
+
+    footer#contacto article { width: 80%; height: auto; }
+    footer#contacto article div#superior-footer { width: 100%; height: auto; }
+    footer#contacto article div#superior-footer p { line-height: 1.5em; padding: 0 39px ; }
+    footer#contacto article div#inferior-footer nav { margin: 35px auto; float: none;}
+}
+
+/* Ajustes para Móviles */
+@media only screen and (max-width: 499px){
+    header article a { margin: 0; float: left; }
+    header article { float: left; top: 10px; margin: 0 auto; display: block; width: 80%; padding: 0 0 0 38px; }
+
+}
+
+@media only screen and (max-width: 399px){
+
+}
